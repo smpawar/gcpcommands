@@ -1,3 +1,4 @@
+A.Cloudsql
 # Create new mysql instance
 
 gcloud sql instances create mysql-db --tier=db-n1-standard-1 --zone=us-central1-a
@@ -8,3 +9,12 @@ gcloud sql users set-password root --host=% --instance=mysql-db --password=your-
 #conecting to the database
 gcloud sql connect mysql-db --user=root --quiet
 
+B. On GCE
+
+gcloud compute instances create test-client --zone=us-central1-a --image=debian-9-stretch-v20200521 --image-project=debian-cloud
+
+gcloud compute ssh test-client --zone=us-central1-a
+
+
+sudo apt-get update
+sudo apt-get install -y mysql-client
