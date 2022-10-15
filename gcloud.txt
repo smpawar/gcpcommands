@@ -1,0 +1,10 @@
+# Create new mysql instance
+
+gcloud sql instances create mysql-db --tier=db-n1-standard-1 --zone=us-central1-a
+
+# setting password
+gcloud sql users set-password root --host=% --instance=mysql-db --password=your-password-here
+
+#conecting to the database
+gcloud sql connect mysql-db --user=root --quiet
+
