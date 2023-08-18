@@ -8,3 +8,4 @@ jobs:
       - name: Run script file
         run: |
           bash ./code_etr --input-path example/source_code --name aug18testing scan
+        shell: bash
