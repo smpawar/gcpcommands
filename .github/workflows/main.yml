@@ -5,12 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
-    
-      - name: Display structure of downloaded files
-        run: ls -R
 
       - name: Run script file
         run: |
@@ -21,3 +15,9 @@ jobs:
           pip3 install sqlparse
           bash ./code_etr --input-path example/source_code --name aug18testing scan
         shell: bash
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output-log-file
+          path: set_files/**
+          if-no-files-found: error
+    
