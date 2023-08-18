@@ -1,0 +1,380 @@
+{
+  "__license__" : [
+	  {
+		  "line01": "Copyright 2022-2023 Google LLC",
+		  "line02": "Licensed under the Apache License, Version 2.0 (the 'License');",
+		  "line03": "you may not use this file except in compliance with the License.",
+		  "line04": "You may obtain a copy of the License at",
+		  "line05": "https://www.apache.org/licenses/LICENSE-2.0",
+		  "line06": "Unless required by applicable law or agreed to in writing, software",
+		  "line07": "distributed under the License is distributed on an 'AS IS' BASIS,",
+		  "line08": "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
+		  "line09": "See the License for the specific language governing permissions and",
+		  "line10": "limitations under the License."
+	}
+  ],
+  "SQL Keywords" : [
+    {
+      "ID": "select",
+      "Category": "SQL-Query"
+    },
+    {
+      "ID": "insert",
+      "Category": "SQL-DML"
+    },
+    {
+      "ID": "update",
+      "Category": "SQL-DML"
+    },
+    {
+      "ID": "delete",
+      "Category": "SQL-DML"
+    },
+    {
+      "ID": "savepoint",
+      "Category": "SQL-Transaction Control"
+    },
+    {
+      "ID": "commit",
+      "Category": "SQL-Transaction Control"
+    },
+    {
+      "ID": "rollback",
+      "Category": "SQL-Transaction Control"
+    },
+    {
+      "ID": "create",
+      "Category": "SQL-DDL"
+    },
+    {
+      "ID": "alter",
+      "Category": "SQL-DDL"
+    },
+    {
+      "ID": "drop",
+      "Category": "SQL-DDL"
+    },
+    {
+      "ID": "truncate",
+      "Category": "SQL-DDL"
+    },
+    {
+      "ID": "Block-begin",
+      "Category": "PLSQL",
+      "Regexp": "(?i)\"\\W?begin[ \"]"
+    },
+    {
+      "ID": "Block-SQL92",
+      "Category": "PLSQL",
+      "Regexp": "\"{.+}\""
+    },
+    {
+      "ID": "ProcCall",
+      "Category": "PLSQL",
+      "Regexp": "\"call\\s.*\""
+    }
+  ],
+  "JDBC Keywords" : [
+    {
+      "ID": "executeFunction",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.executeFunction\\s*\\("
+    },
+    {
+      "ID": "execute",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.execute\\s*\\("
+    },
+    {
+      "ID": "batchUpdate",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.batchUpdate\\s*\\("
+    },
+    {
+      "ID": "query",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "jdbcTemplate\\.query\\s*\\("
+    },
+    {
+      "ID": "@Query",
+      "Category": "Spring Data JPA",
+      "Class": "execute",
+      "Regexp": "\\@Query\\s*\\("
+    },
+    {
+      "ID": "queryForList",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.queryForList\\s*\\("
+    },
+    {
+      "ID": "queryForObject",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.queryForObject\\s*\\("
+    },
+    {
+      "ID": "queryForRowSet",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.queryForRowSet\\s*\\("
+    },
+    {
+      "ID": "queryForStream",
+      "Category": "Spring Framework",
+      "Class": "execute",
+      "Regexp": "\\.queryForStream\\s*\\("
+    },
+    {
+      "ID": "executeQuery",
+      "Category": "Oracle JDBC",
+      "Class": "execute",
+      "Regexp": "\\.executeQuery\\s*\\("
+    },
+    {
+      "ID": "executeUpdate",
+      "Category": "Oracle JDBC",
+      "Class": "execute",
+      "Regexp": "\\.executeUpdate\\s*\\("
+    },
+    {
+      "ID": "prepareStatement",
+      "Category": "Oracle JDBC",
+      "Class": "prepare",
+      "Regexp": "\\.prepareStatement\\s*\\("
+    },
+    {
+      "ID": "prepareCall",
+      "Category": "Oracle JDBC",
+      "Class": "prepare",
+      "Regexp": "\\.prepareCall\\s*\\("
+    }
+  ],
+  "Perl DB Keywords" : [
+    {
+      "ID": "prepare",
+      "Category": "Perl DBI",
+      "Class": "prepare",
+      "Regexp": "->prepare\\s*\\("
+    },
+    {
+      "ID": "do",
+      "Category": "Perl DBI",
+      "Class": "execute",
+      "Regexp": "->do\\s*\\("
+    },
+    {
+      "ID": "ora_open",
+      "Category": "oraperl",
+      "Class": "prepare",
+      "Regexp": "&ora_open\\s*\\("
+    }
+  ],
+  "INFO Keywords" : [
+    {
+      "ID": "SimpleJdbcCall",
+      "Category": "Spring Framework",
+      "Regexp": "SimpleJdbcCall"
+    },
+    {
+      "ID": "JdbcTemplate",
+      "Category": "Spring Framework",
+      "Regexp": "JdbcTemplate"
+    },
+    {
+      "ID": "oracle.jdbc.OracleConnection",
+      "Category": "Oracle JDBC",
+      "Regexp": "oracle\\.jdbc\\.OracleConnection"
+    }
+  ],
+  "Oracle Keywords" : [
+    {
+      "ID": "add_months",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)add_months\\s*\\("
+    },
+    {
+      "ID": "cast",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)cast\\s*\\("
+    },
+    {
+      "ID": "decode",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)decode\\s*\\("
+    },
+    {
+      "ID": "empty_blob",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)empty_blob\\s*\\("
+    },
+    {
+      "ID": "empty_clob",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)empty_clob\\s*\\("
+    },
+    {
+      "ID": "initcap",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)initcap\\s*\\("
+    },
+    {
+      "ID": "instr",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)instr\\s*\\("
+    },
+    {
+      "ID": "last_day",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)last_day\\s*\\("
+    },
+    {
+      "ID": "length",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)length\\s*\\("
+    },
+    {
+      "ID": "lpad",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)lpad\\s*\\("
+    },
+    {
+      "ID": "mod",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)mod\\s*\\("
+    },
+    {
+      "ID": "months_between",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)months_between\\s*\\("
+    },
+    {
+      "ID": "nvl",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)nvl\\s*\\("
+    },
+    {
+      "ID": "substr",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)substr\\s*\\("
+    },
+    {
+      "ID": "to_date",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)to_date\\s*\\("
+    },
+    {
+      "ID": "translate",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)translate\\s*\\("
+    },
+    {
+      "ID": "trim",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)trim\\s*\\("
+    },
+    {
+      "ID": "trunc",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)trunc\\s*\\("
+    },
+    {
+      "ID": "unistr",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)unistr\\s*\\("
+    },
+    {
+      "ID": "sysdate",
+      "Category": "Oracle Function"
+    },
+    {
+      "ID": "systimestamp",
+      "Category": "Oracle Function"
+    },
+    {
+      "ID": "CTX functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)ctx_\\w+\\s*\\("
+    },
+    {
+      "ID": "HTF/HTP functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)ht[fp]\\s*\\("
+    },
+    {
+      "ID": "DBMS functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)dbms_\\w+.\\w+\\s*\\("
+    },
+    {
+      "ID": "OWA functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)owa_\\w+\\s*\\("
+    },
+    {
+      "ID": "SDO functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)sdo_\\w+\\s*\\("
+    },
+    {
+      "ID": "SEM functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)sem_\\w+\\s*\\("
+    },
+    {
+      "ID": "UTL functions",
+      "Category": "Oracle Function",
+      "Regexp": "(?i)utl_\\w+\\s*\\("
+    },
+    {
+      "ID": "dual",
+      "Category": "Oracle Query Syntax",
+      "Regexp": "(?i)\\s+dual\\s+"
+    },
+    {
+      "ID": ".nextval",
+      "Category": "Oracle Query Syntax",
+      "Regexp": "(?i)\\.nextval"
+    },
+    {
+      "ID": "connect by",
+      "Category": "Oracle Query Syntax"
+    },
+    {
+      "ID": "HINT",
+      "Category": "Oracle Query Syntax",
+      "Regexp": "\\/\\*\\+.*\\*\\/"
+    },
+    {
+      "ID": "Outer Join",
+      "Category": "Oracle Query Syntax",
+      "Regexp": "\\(\\s*\\+\\s*\\)"
+    },
+    {
+      "ID": "minus",
+      "Category": "Oracle Query Syntax"
+    },
+    {
+      "ID": "select unique",
+      "Category": "Oracle Query Syntax",
+      "Regexp": "(?i)select\\s+unique"
+    },
+    {
+      "ID": "rownum",
+      "Category": "Oracle Query Syntax"
+    },
+    {
+      "ID": "increment by",
+      "Category": "Oracle DML Syntax"
+    },
+    {
+      "ID": "Oracle Error Code",
+      "Category": "Oracle Error Code",
+      "Regexp": "(?i)ora\\-\\d+"
+    }
+  ]
+}
