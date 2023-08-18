@@ -1,0 +1,11 @@
+name: Run shell script
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run script file
+        run: |
+          chmod +x ./code_etr
+          bash ./code_etr --input-path example/source_code --name aug18testing scan
