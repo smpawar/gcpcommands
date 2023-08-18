@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/browse/bootstrap-table@1.21.1/dist/extensions/treegrid/bootstrap-table-treegrid.js"></script>
+<style>table-max-width { max-width: 100rem; white-space: pre-wrap;}</style>
+<H1>SQL and PL/SQL Code found in JAVA Files</H1>
+</head>
+<body>
+<table id="detail-table" class="table table-sm table-hover table-bordered table-max-width" data-toggle="table" data-search="true" data-show-columns="true">
+<thead><tr><th data-field="c_num" data-sortable="true">#</th><th data-field="c_status" data-sortable="true">Status</th><th data-field="c_filename" data-sortable="true">File Name</th><th data-field="c_start" data-sortable="true">Start (Line,Column)</th><th data-field="c_end" data-sortable="true">End (Line,Column)</th><th data-field="c_sql_stmt" data-sortable="true">SQL Statement</th><th data-field="c_ora_count" data-sortable="true">Oracle Keyword Count</th><th data-field="c_ora_list" data-sortable="true">Oracle Keyword List</th><th data-field="c_full_stmt" data-sortable="false">Full Statement</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>36,1</td><td>36,50</td><td>drop table basic_lob_table</td><td>0</td><td></td><td>      stmt.execute ("drop table basic_lob_table");</td></tr>
+<tr><td>2</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>45,1</td><td>46,16</td><td>create table basic_lob_table (x varchar2 (30), b blob, c clob)</td><td>0</td><td></td><td>    stmt.execute ("create table basic_lob_table (x varchar2 (30), b
+blob, c clob)");</td></tr>
+<tr><td>3</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>49,1</td><td>50,55</td><td>insert into basic_lob_table values ('one', '010101010101010101010101010101', 'onetwothreefour')</td><td>0</td><td></td><td>    stmt.execute ("insert into basic_lob_table values ('one',
+'010101010101010101010101010101', 'onetwothreefour')");</td></tr>
+<tr><td>4</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>51,1</td><td>52,57</td><td>insert into basic_lob_table values ('two', '0202020202020202020202020202', 'twothreefourfivesix')</td><td>0</td><td></td><td>    stmt.execute ("insert into basic_lob_table values ('two',
+'0202020202020202020202020202', 'twothreefourfivesix')");</td></tr>
+<tr><td>5</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>61,1</td><td>62,13</td><td>select * from basic_lob_table for update</td><td>0</td><td></td><td>    ResultSet rset = stmt.executeQuery ("select * from basic_lob_table
+for update");</td></tr>
+<tr><td>6</td><td>VERIFIED</td><td>example/source_code/java/example4.java</td><td>85,1</td><td>85,63</td><td>select * from basic_lob_table</td><td>0</td><td></td><td>    rset = stmt.executeQuery ("select * from basic_lob_table");</td></tr>
+<tr><td>7</td><td>VERIFIED</td><td>example/source_code/java/example1.java</td><td>25,1</td><td>25,65</td><td>select ENAME from EMP</td><td>0</td><td></td><td>    ResultSet rset = stmt.executeQuery ("select ENAME from EMP");</td></tr>
+<tr><td>8</td><td>VERIFIED</td><td>example/source_code/java/example3.java</td><td>26,1</td><td>27,70</td><td>create or replace function RAISESAL (name CHAR, raise NUMBER) return NUMBER is begin return raise + 100000; end;</td><td>0</td><td></td><td>    stmt.execute ("create or replace function RAISESAL (name CHAR, raise NUMBER)
+                 return NUMBER is begin return raise + 100000; end;");</td></tr>
+<tr><td>9</td><td>VERIFIED</td><td>example/source_code/java/example3.java</td><td>34,1</td><td>34,78</td><td>{? = call RAISESAL (?, ?)}</td><td>0</td><td></td><td>    CallableStatement cstmt = conn.prepareCall ("{? = call RAISESAL (?, ?)}");</td></tr>
+<tr><td>10</td><td>VERIFIED</td><td>example/source_code/java/example2.java</td><td>25,1</td><td>25,58</td><td>delete from EMP where EMPNO = 1500</td><td>0</td><td></td><td>      stmt.execute ("delete from EMP where EMPNO = 1500");</td></tr>
+<tr><td>11</td><td>VERIFIED</td><td>example/source_code/java/example2.java</td><td>34,1</td><td>34,57</td><td>delete from EMP where EMPNO = 507</td><td>0</td><td></td><td>      stmt.execute ("delete from EMP where EMPNO = 507");</td></tr>
+<tr><td>12</td><td>VERIFIED</td><td>example/source_code/java/example2.java</td><td>45,1</td><td>46,77</td><td>insert into EMP (EMPNO, ENAME) values (?, ?)</td><td>0</td><td></td><td>    PreparedStatement pstmt = 
+      conn.prepareStatement ("insert into EMP (EMPNO, ENAME) values (?, ?)");</td></tr>
+<tr><td>13</td><td>VERIFIED</td><td>example/source_code/java/example5.java</td><td>30,1</td><td>30,48</td><td>drop table streamexample</td><td>0</td><td></td><td>      stmt.execute ("drop table streamexample");</td></tr>
+<tr><td>14</td><td>VERIFIED</td><td>example/source_code/java/example5.java</td><td>39,1</td><td>40,54</td><td>create table streamexample (NAME varchar2 (256), DATA long)</td><td>0</td><td></td><td>    stmt.execute ("create table streamexample 
+                   (NAME varchar2 (256), DATA long)");</td></tr>
+<tr><td>15</td><td>VERIFIED</td><td>example/source_code/java/example5.java</td><td>46,1</td><td>48,59</td><td>insert into streamexample (data, name) values (?, ?)</td><td>0</td><td></td><td>    PreparedStatement pstmt = 
+      conn.prepareStatement ("insert into streamexample 
+                              (data, name) values (?, ?)");</td></tr>
+<tr><td>16</td><td>VERIFIED</td><td>example/source_code/java/example5.java</td><td>54,1</td><td>56,49</td><td>select DATA from streamexample where NAME='StreamExample'</td><td>0</td><td></td><td>    ResultSet rset = 
+      stmt.executeQuery ("select DATA from streamexample where
+                          NAME='StreamExample'");</td></tr>
+</tbody>
+</body>
+</html>
