@@ -1,9 +1,0 @@
-select1: >
-  SELECT `EMP_ID`, `LAST_NAME` FROM `EMPLOYEE_TB`
-  WHERE `CITY` = ‘INDIANAPOLIS'
-  ORDER BY `EMP_ID`, `LAST_NAME`;
-select2: |
-  select cust_last_name, cust_credit_limit, cust_year_of_birth
-  from sh.customers cust
-  where cust_year_of_birth > add_months(sysdate,-55)
-update1: update sh.customers set cust_credit_limit = cust_credit_limit + 100 where cust_id = 2345
