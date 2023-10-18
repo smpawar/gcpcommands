@@ -1,0 +1,4 @@
+status	keyword	file name	full statement	Oracle Keyword Count	Oracle Kwyword List
+keyword found	select	example/source_code/resources/example1.properties	  example1 = "select * from sh.sales s"	0	 
+keyword found	select	example/source_code/resources/example1.properties	  example2 = "SELECT cust_last_name, cust_credit_limit, cust_year_of_birth FROM   sh.customers WHERE  cust_state_province='Noord-Holland' AND  cust_year_of_birth > add_months(sysdate,-12) ORDER BY cust_year_of_birth"	2	add_months, sysdate
+keyword found	select	example/source_code/resources/example1.properties	  example3 = "select sysdate from dual"	1	sysdate
